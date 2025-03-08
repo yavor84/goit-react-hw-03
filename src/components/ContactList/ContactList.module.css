@@ -1,0 +1,13 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
