@@ -1,0 +1,19 @@
+.title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.searchInput {
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: 2px solid #ccc;
+  line-height: 1.25;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin-bottom: 20px;
+}
+
+.searchInput:focus {
+  border-color: #58bc82;
+}

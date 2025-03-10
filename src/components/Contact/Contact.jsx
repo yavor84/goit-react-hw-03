@@ -6,10 +6,10 @@ const Contact = ({ data: { id, name, number }, onDelete }) => {
   return (
     <>
       <FcBusinessContact />
-      <h3>{name}</h3>
+      <h3 className={css.name}>{name}</h3>
       <FcPhone />
       <p>{number}</p>
-      <button className={css.deleteButton} onClick={() => onDelete(id)}>
+      <button className={css.deleteBtn} onClick={() => onDelete(id)}>
         Delete
       </button>
     </>

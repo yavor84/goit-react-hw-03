@@ -34,18 +34,24 @@ const ContactForm = ({ onAdd }) => {
       validationSchema={UserSchema}
       onSubmit={handleSubmit}
     >
-      <Form>
-        <div>
-          <label htmlFor={nameId}>Name</label>
-          <Field type="text" name="name" id={nameId} />
-          <ErrorMessage name="name" component="span" />
+      <Form className={css.form}>
+        <div className={css.wrap}>
+          <label className={css.label} htmlFor={nameId}>
+            Name
+          </label>
+          <Field className={css.input} type="text" name="name" id={nameId} />
+          <ErrorMessage className={css.error} name="name" component="span" />
         </div>
-        <div>
-          <label htmlFor={numberId}>Number</label>
-          <Field type="tel" name="number" id={numberId} />
-          <ErrorMessage name="number" component="span" />
+        <div className={css.wrap}>
+          <label className={css.label} htmlFor={numberId}>
+            Number
+          </label>
+          <Field className={css.input} type="tel" name="number" id={numberId} />
+          <ErrorMessage className={css.error} name="number" component="span" />
         </div>
-        <button type="submit">Add contact</button>
+        <button className={css.addBtn} type="submit">
+          Add contact
+        </button>
       </Form>
     </Formik>
   );

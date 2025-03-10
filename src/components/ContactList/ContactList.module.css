@@ -1,13 +1,16 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .item {
   padding: 10px 20px;
-  border: 1px solid #000;
+  border: 2px solid #dddee6;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   gap: 10px;
+  background-color: #dddee6;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }

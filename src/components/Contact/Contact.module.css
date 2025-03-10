@@ -1,3 +1,25 @@
-.deleteButton {
+.deleteBtn {
   margin-left: auto;
+}
+
+.deleteBtn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #7b7c81;
+  color: white;
+  border: none;
+  outline: none;
+  transition: all 300ms;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.deleteBtn:hover,
+.deleteBtn:focus {
+  background-color: #58bc82;
+  outline: #58bc82;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 500;
 }
